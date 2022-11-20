@@ -45,13 +45,14 @@ header{
     cursor: pointer;
 }
 .enlaces:hover{
-    animation: pulse 5s;
+    animation: pulse 1s;
     font-size: 20px;
     color: #ccb26b;
+    transition-duration: 1s;
 }
 @keyframes pulse{
     0% {
-      transform: scale(.85);
+      transform: scale(1);
     }
     70% {
       transform: scale(1);
@@ -63,7 +64,7 @@ header{
     }
 }
 .scale1 {
-    transform: scale(1.2); 
+    transform: scale(1.5); 
 }
 .scale2 {
     transform: scale(2, 0.5);
