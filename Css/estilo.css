@@ -1,257 +1,272 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
-header{
-    background-color: black;
-    display: block;
-    width: 100%;
+header {
+	background-color: black;
+	display: block;
+	width: 100%;
 }
-.main{
-    height: 100%;
+.main {
+	height: 100%;
+	width: 100%;
 }
-.logo{
-    width: 100px;
-    height: 50px;
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.logo {
+	width: 80px;
+	height: 40px;
+	float: left;
 }
-.titulo{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 60px;
-    background: linear-gradient(#ccb26b,#9b6f33);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
+.titulo {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 300%;
+	background: linear-gradient(#ccb26b, #9b6f33);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	text-align: center;
 }
-.menu{
-    text-align: end;
-    list-style-type: none;
-    justify-content: space-around;
-    display: flex;
-    align-items: center;
+.navbar-expand-lg .navbar-collapse {
+	justify-content: space-around;
 }
-.menu li{
-    display: inline-block;
-    text-align: center;
+.menu {
+	text-align: end;
+	list-style-type: none;
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
 }
-.enlaces{
-    font-family: 'Quicksand', sans-serif; 
-    padding: 10px;
-    color: rgb(220, 222, 222);
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
+.menu li {
+	display: inline-block;
+	text-align: center;
 }
-.enlaces:hover{
-    animation: pulse 1s;
-    font-size: 20px;
-    color: #ccb26b;
-    transition-duration: 1s;
+.enlaces {
+	font-family: 'Quicksand', sans-serif;
+	padding: 10px;
+	margin: 0px 15px 0px 15px;
+	color: rgb(220, 222, 222);
+	text-decoration: none;
+	cursor: pointer;
 }
-@keyframes pulse{
-    0% {
-      transform: scale(1);
-    }
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 50px rgba(#9b6f33, 0);
-    }
-      100% {
-      transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(#9b6f33, 0);
-    }
+.enlaces:hover {
+	animation: pulse 1s;
+	color: #ccb26b;
+	transition-duration: 0.5s;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(#9b6f33, 0);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(#9b6f33, 0);
+	}
 }
 .scale1 {
-    transform: scale(1.5); 
+	transform: scale(1.5);
 }
 .scale2 {
-    transform: scale(2, 0.5);
+	transform: scale(2, 0.5);
 }
-.carousel{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+.carousel {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 }
-.carousel img{
-    flex: 0 0 100%;
-    width: 500px;
-    object-fit: cover;
-    scroll-snap-align: center;
+.carousel img {
+	flex: 0 0 100%;
+	width: 500px;
+	object-fit: cover;
+	scroll-snap-align: center;
 }
-footer{
-    bottom: 0;
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-decoration: none;
-    position: relative;
+footer {
+	bottom: 0;
+	background-color: black;
+	color: white;
+	width: 100%;
+	text-decoration: none;
+	position: absolute;
 }
-.redes{
-    display: block;
-    text-decoration: none;
+.redes {
+	display: block;
+	text-decoration: none;
 }
 .redes a {
-    margin: 5px 0px;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: rgb(220, 222, 222);
-    font-family: 'Quicksand', sans-serif; 
+	margin: 5px 0px;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: rgb(220, 222, 222);
+	font-family: 'Quicksand', sans-serif;
 }
-.formulario{
-    font-family: 'Quicksand', sans-serif; 
-    margin: 20px;
-    padding: 30px;
+.formulario {
+	font-family: 'Quicksand', sans-serif;
+	margin: 20px;
+	padding: 30px;
 }
-.profes{
-    height: 300px;
-    width: 400px;
-    display: inline-block;
+.profes {
+	height: 300px;
+	width: 400px;
+	display: inline-block;
 }
-.profe{
-    margin: auto;
-    width: 200px;
-    
+.profe {
+	margin: auto;
+	width: 200px;
 }
-.profes span{
-    display: inline-block;
-    vertical-align: top;
-    font-family: 'Quicksand', sans-serif; 
-    font-size: small;
-    width: 150px;
+.profes span {
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Quicksand', sans-serif;
+	font-size: small;
+	width: 150px;
 }
-.nosotros{
-    width: 1000px;
-    margin: auto;
-    font-family: 'Quicksand', sans-serif; 
-    font-size: medium;
-    margin-top: 30px;
+.nosotros {
+	width: 1000px;
+	margin: auto;
+	font-family: 'Quicksand', sans-serif;
+	font-size: medium;
+	margin-top: 30px;
 }
-.contenedorProfes{
-    width: 1000px;
-    margin: auto;
-    margin-top: 30px;
-    margin-left: 350px;
+.contenedorProfes {
+	width: 1000px;
+	margin: auto;
+	margin-top: 30px;
+	margin-left: 350px;
 }
-.contenedor{
-    display : flex;
-    align-items: center;
+.contenedor {
+	display: flex;
+	align-items: center;
 }
-.contenedor form{
-    float: right;
+.contenedor form {
+	float: right;
 }
-.conteiner{
-    margin-left: 350px;
-    display: flex;
-    align-items: center;
+.conteiner {
+	margin-left: 350px;
+	display: flex;
+	align-items: center;
 }
-ul{
-    list-style: none;
+ul {
+	list-style: none;
 }
-ul li{
-    padding-bottom: 10px;
-    font-size: small;
+ul li {
+	padding-bottom: 10px;
+	font-size: small;
 }
-ul li a{
-    text-decoration: none;
-    color: dimgray;
+ul li a {
+	text-decoration: none;
+	color: dimgray;
 }
-.contacto{
-    height: 100%;
+.contacto {
+	height: 100%;
 }
-.labelForm{
-    width: 500px;
+.labelForm {
+	width: 500px;
 }
-textarea{
-    font-family: 'Quicksand', sans-serif; 
-    font-size: medium;
+textarea {
+	font-family: 'Quicksand', sans-serif;
+	font-size: medium;
 }
-fieldset{
-    margin: auto;
-    padding: 20px;
+fieldset {
+	margin: auto;
+	padding: 20px;
 }
-.filtros{
-    font-family: 'Quicksand', sans-serif; 
-    font-size: medium;
-    margin: 10px;
-    padding: 25px;
+.filtros {
+	font-family: 'Quicksand', sans-serif;
+	font-size: medium;
+	margin: 10px;
+	padding: 25px;
 }
-h4{
-    font-family: 'Quicksand', sans-serif; 
-    font-size: large;
-    text-align: center;
+h4 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: large;
+	text-align: center;
 }
-.horariosSpam{
-    font-family: 'Quicksand', sans-serif; 
-    font-size: small;
-    text-align: center;
+.horariosSpam {
+	font-family: 'Quicksand', sans-serif;
+	font-size: small;
+	text-align: center;
 }
-.subtitulo{
-    margin-left: 50px;
-    padding: 10px;
-    border: 2px solid rgb(199, 195, 188);
+.subtitulo {
+	margin-left: 50px;
+	padding: 10px;
+	border: 2px solid rgb(199, 195, 188);
 }
-table{ 
-    border: solid 1px black;
-    margin: 15px 0px 50px 150px;
-    font-family: 'Quicksand', sans-serif; 
-    font-size: large;
-    text-align: center;
-    border-collapse: collapse;
+table {
+	border: solid 1px black;
+	margin: 15px 0px 50px 150px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: large;
+	text-align: center;
+	border-collapse: collapse;
 }
-table th{
-    border: solid 1px black;
-    padding: 25px;
+table th {
+	border: solid 1px black;
+	padding: 25px;
 }
-table td{
-    border: solid 1px black;
-    padding: 10px;
+table td {
+	border: solid 1px black;
+	padding: 10px;
 }
-table tr{
-    border: solid 1px black;
-    padding: 15px;
+table tr {
+	border: solid 1px black;
+	padding: 15px;
 }
-.actividades{
-    display: flex;
-    margin: 20px;
+.actividades {
+	display: flex;
+	margin: 20px;
 }
-.actividades img{
-    margin-top: 75px;
-    width: 250px;
-    height: 200px;
+.actividades img {
+	margin-top: 55px;
+	width: 250px;
+	height: 200px;
+	margin-left: 25%;
+	display: block;
+	margin: auto;
 }
-.act{
-    padding: 50px;
-    font-family: 'Quicksand', sans-serif; 
+.act {
+	padding: 50px;
+	font-family: 'Quicksand', sans-serif;
 }
-.act p{
-    margin-top: 10px;
+.act p {
+	margin-top: 10px;
+	width: 100%;
 }
-.costos{
-    display: flex;
-    align-items: center;
-    margin: 50px 300px;
-    width: 700px;
+.costos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10% 0 10%;
 }
-.planes{
-    width: 100%;
-    border: solid 1px black;
-    font-family: 'Quicksand', sans-serif; 
-    height: 75px;
-    padding: 10px;
-    text-align: center;
+.planes {
+	height: 150px;
+	border: solid 1px black;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	justify-content: center;
 }
-.planes p{
-    padding: 10px;
-    
+.planes p {
+	padding: 10px;
 }
-.contenedorProfes{
-    width: 1000px;
-    margin: auto;
-    font-family: 'Quicksand', sans-serif; 
-    font-size: medium;
-    margin-top: 30px;
+.contenedorProfes {
+	width: 1000px;
+	margin: auto;
+	font-family: 'Quicksand', sans-serif;
+	font-size: medium;
+	margin-top: 30px;
+}
+.img_act {
+	width: 200px;
+	margin: 10px;
+}
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	margin: 0;
+	margin-bottom: 40px;
 }
