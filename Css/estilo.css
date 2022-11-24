@@ -24,6 +24,27 @@ header {
 	background-clip: text;
 	color: transparent;
 	text-align: center;
+	animation-name: stretch;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+@keyframes stretch {
+	0% {
+		transform: scale(0);
+		background-color: #ccb26b;
+		border-radius: 100%;
+	}
+
+	50% {
+		background-color: #9b6f33;
+	}
+
+	100% {
+		transform: scale(1);
+		background-color: #ccb26b;
+	}
 }
 .navbar-expand-lg .navbar-collapse {
 	justify-content: space-around;
@@ -48,28 +69,8 @@ header {
 	cursor: pointer;
 }
 .enlaces:hover {
-	animation: pulse 1s;
 	color: #ccb26b;
 	transition-duration: 0.5s;
-}
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 50px rgba(#9b6f33, 0);
-	}
-	100% {
-		transform: scale(1);
-		box-shadow: 0 0 0 0 rgba(#9b6f33, 0);
-	}
-}
-.scale1 {
-	transform: scale(1.5);
-}
-.scale2 {
-	transform: scale(2, 0.5);
 }
 .carousel {
 	display: flex;
@@ -269,4 +270,15 @@ html {
 body {
 	margin: 0;
 	margin-bottom: 40px;
+}
+button {
+	background-color: black;
+	cursor: pointer;
+	border: none;
+	padding: 6px 16px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
 }
