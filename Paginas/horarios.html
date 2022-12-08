@@ -56,6 +56,7 @@
 							<a class="enlaces nav-link" href="actividades.html"
 								>Actividades</a
 							>
+							<a class="enlaces nav-link" href="horarios.html">Horarios</a>
 							<a class="enlaces nav-link" href="nosotros.html">Nosotros</a>
 							<a class="enlaces nav-link" href="contacto.html">Contacto</a>
 							<a class="enlaces nav-link" href=""> | </a>
@@ -67,211 +68,216 @@
 			</nav>
 		</header>
 		<h1 class="titulo">Horarios</h1>
-		<div class="contenedor">
-			<div class="subtitulo">
-				<h4>Sala de musculacion</h4>
-				<samp class="horariosSpam">Todos los dias de 6:00 a 23:00</samp>
+		<main>
+
+			<div class="contenedor row">
+				<div class="subtitulo col-xs-12 col-sm-3 col-lg-3">
+					<h4>Sala de musculacion</h4>
+					<samp class="horariosSpam">Todos los dias de 6:00 a 23:00</samp>
+				</div>
+				<div class="filtros col-xs-12 col-sm-3 col-lg-3">
+					<label for="mes">Mes</label>
+					<select name="mes" id="">
+						<option value="ene">Enero</option>
+						<option value="uru">Febrero</option>
+						<option value="mar">Marzo</option>
+						<option value="abr">Abril</option>
+						<option value="may">Mayo</option>
+						<option value="jun">Junio</option>
+						<option value="jul">Julio</option>
+						<option value="ago">Agosto</option>
+						<option value="set">Setiembre</option>
+						<option value="oct">Octubre</option>
+						<option value="nov">Noviembre</option>
+						<option value="dic">Diciembre</option>
+					</select>
+				</div>
+				<div class="filtros">
+					<label for="sem">Semana</label>
+					<select name="sem" id="">
+						<option value="1">Primer semana</option>
+						<option value="2">Segunda semana</option>
+						<option value="3">Tercera semana</option>
+						<option value="4">Cuarta semana</option>
+					</select>
+				</div>
+				<div class="filtros col-xs-12 col-sm-3 col-lg-3">
+					<label for="local">Local</label>
+					<select name="local" id="">
+						<option value="pde">Punta del Este</option>
+						<option value="mvd">Montevideo</option>
+						<option value="can">Canelones</option>
+					</select>
+				</div>
+				<div class="filtros col-xs-12 col-sm-3 col-lg-3">
+					<button value="Filtrar">Filtrar</button>
+				</div>
 			</div>
-			<div class="filtros">
-				<label for="mes">Mes</label>
-				<select name="mes" id="">
-					<option value="ene">Enero</option>
-					<option value="uru">Febrero</option>
-					<option value="mar">Marzo</option>
-					<option value="abr">Abril</option>
-					<option value="may">Mayo</option>
-					<option value="jun">Junio</option>
-					<option value="jul">Julio</option>
-					<option value="ago">Agosto</option>
-					<option value="set">Setiembre</option>
-					<option value="oct">Octubre</option>
-					<option value="nov">Noviembre</option>
-					<option value="dic">Diciembre</option>
-				</select>
+			<div class="table-grid">
+				<div class="container">
+					<div class="row">
+						<div class="col">Horario</div>
+						<div class="col">Lunes</div>
+						<div class="col d-none d-sm-block">Martes</div>
+						<div class="col d-none d-sm-block">Miercoles</div>
+						<div class="col d-none d-sm-block">Jueves</div>
+						<div class="col d-none d-sm-block">Viernes</div>
+						<div class="col d-none d-sm-block">Sabado</div>
+						<div class="col d-none d-sm-block">Domingo</div>
+					</div>
+					<div class="row">
+						<div class="col">6:00 - 7:00</div>
+						<div class="col">GAP</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">7:00 - 8:00</div>
+						<div class="col">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">8:00 - 9:00</div>
+						<div class="col">CrossFit</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">9:00 - 10:00</div>
+						<div class="col">Yoga</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">10:00 - 11:00</div>
+						<div class="col">CrossFit</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">11:00 - 12:00</div>
+						<div class="col">Spinning</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">13:00 - 14:00</div>
+						<div class="col">Yoga</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">14:00 - 15:00</div>
+						<div class="col">GAP</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">15:00 - 16:00</div>
+						<div class="col">Funcional</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">16:00 - 17:00</div>
+						<div class="col">Funcional</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">Spinnings</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">17:00 - 18:00</div>
+						<div class="col">Spinning</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">19:00 - 20:00</div>
+						<div class="col">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">20:00 - 21:00</div>
+						<div class="col">GAP</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block">GAP</div>
+						<div class="col d-none d-sm-block">CrossFit</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">21:00 - 22:00</div>
+						<div class="col">Spinning</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+					<div class="row">
+						<div class="col">22:00 - 23:00</div>
+						<div class="col">Funcional</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">Spinning</div>
+						<div class="col d-none d-sm-block">Funcional</div>
+						<div class="col d-none d-sm-block">Yoga</div>
+						<div class="col d-none d-sm-block"></div>
+					</div>
+				</table>
 			</div>
-			<div class="filtros">
-				<label for="sem">Semana</label>
-				<select name="sem" id="">
-					<option value="1">Primer semana</option>
-					<option value="2">Segunda semana</option>
-					<option value="3">Tercera semana</option>
-					<option value="4">Cuarta semana</option>
-				</select>
-			</div>
-			<div class="filtros">
-				<label for="local">Local</label>
-				<select name="local" id="">
-					<option value="pde">Punta del Este</option>
-					<option value="mvd">Montevideo</option>
-					<option value="can">Canelones</option>
-				</select>
-			</div>
-			<div class="filtros">
-				<button value="Filtrar">Filtrar</button>
-			</div>
-		</div>
-		<table>
-			<tr>
-				<th>x</th>
-				<th>Lunes</th>
-				<th>Martes</th>
-				<th>Miercoles</th>
-				<th>Jueves</th>
-				<th>Viernes</th>
-				<th>Sabado</th>
-				<th>Domingo</th>
-			</tr>
-			<tr>
-				<td>6:00 - 7:00</td>
-				<td>GAP</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td>Yoga</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>7:00 - 8:00</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>8:00 - 9:00</td>
-				<td>CrossFit</td>
-				<td>Funcional</td>
-				<td>CrossFit</td>
-				<td>Funcional</td>
-				<td>CrossFit</td>
-				<td>Funcional</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>9:00 - 10:00</td>
-				<td>Yoga</td>
-				<td>CrossFit</td>
-				<td>Yoga</td>
-				<td>CrossFit</td>
-				<td>Yoga</td>
-				<td>CrossFit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>10:00 - 11:00</td>
-				<td>CrossFit</td>
-				<td>Funcional</td>
-				<td>CrossFit</td>
-				<td>Funcional</td>
-				<td>CrossFit</td>
-				<td>Funcional</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>11:00 - 12:00</td>
-				<td>Spinning</td>
-				<td>Yoga</td>
-				<td>Spinning</td>
-				<td>Yoga</td>
-				<td>Spinning</td>
-				<td>Yoga</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>13:00 - 14:00</td>
-				<td>Yoga</td>
-				<td>GAP</td>
-				<td>Yoga</td>
-				<td>GAP</td>
-				<td>Yoga</td>
-				<td>Yoga</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>14:00 - 15:00</td>
-				<td>GAP</td>
-				<td>Funcional</td>
-				<td>GAP</td>
-				<td>Funcional</td>
-				<td>GAP</td>
-				<td>Funcional</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>15:00 - 16:00</td>
-				<td>Funcional</td>
-				<td>Yoga</td>
-				<td>Funcional</td>
-				<td>Yoga</td>
-				<td>Funcional</td>
-				<td>Yoga</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>16:00 - 17:00</td>
-				<td>Funcional</td>
-				<td>Spinning</td>
-				<td>Funcional</td>
-				<td>Spinning</td>
-				<td>Funcional</td>
-				<td>Spinnings</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>17:00 - 18:00</td>
-				<td>Spinning</td>
-				<td>CrossFit</td>
-				<td>Spinning</td>
-				<td>CrossFit</td>
-				<td>Spinning</td>
-				<td>CrossFit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>19:00 - 20:00</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td>Spinning</td>
-				<td>GAP</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>20:00 - 21:00</td>
-				<td>GAP</td>
-				<td>CrossFit</td>
-				<td>GAP</td>
-				<td>CrossFit</td>
-				<td>GAP</td>
-				<td>CrossFit</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>21:00 - 22:00</td>
-				<td>Spinning</td>
-				<td>Yoga</td>
-				<td>Spinning</td>
-				<td>Yoga</td>
-				<td>Spinning</td>
-				<td>Yoga</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>22:00 - 23:00</td>
-				<td>Funcional</td>
-				<td>Spinning</td>
-				<td>Funcional</td>
-				<td>Spinning</td>
-				<td>Funcional</td>
-				<td>Yoga</td>
-				<td></td>
-			</tr>
-		</table>
+		</main>
 		<footer>
 			<ul class="redes">
 				<a class="fa fa-instagram" href=""> elgym </a>
