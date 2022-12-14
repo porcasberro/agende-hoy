@@ -1,0 +1,295 @@
+//variables
+$colores-titulos: linear-gradient(#ccb26b, #9b6f33);
+$fuete: 'Quicksand', sans-serif;
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: black;
+	display: block;
+	width: 100%;
+	height: 10%;
+}
+main {
+	min-height: 80%;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.logo {
+	width: 80px;
+	height: 40px;
+	float: left;
+}
+.titulo {
+	font-family: $fuete;
+	font-size: 300%;
+	background: $colores-titulos;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	text-align: center;
+	animation-name: stretch;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-direction: alternate;
+	animation-play-state: running;
+}
+@keyframes stretch {
+	0% {
+		transform: scale(0);
+		background-color: #ccb26b;
+		border-radius: 100%;
+	}
+
+	50% {
+		background-color: #9b6f33;
+	}
+
+	100% {
+		transform: scale(1);
+		background-color: #ccb26b;
+	}
+}
+.navbar-expand-lg .navbar-collapse {
+	justify-content: space-around;
+}
+.menu {
+	text-align: end;
+	list-style-type: none;
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+}
+.menu li {
+	display: inline-block;
+	text-align: center;
+}
+.enlaces {
+	font-family: $fuete;
+	padding: 10px;
+	margin: 0px 15px 0px 15px;
+	color: rgb(220, 222, 222);
+	text-decoration: none;
+	cursor: pointer;
+}
+.enlaces:hover {
+	color: #ccb26b;
+	transition-duration: 0.5s;
+}
+.carousel {
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.carousel img {
+	flex: 0 0 100%;
+	width: 500px;
+	object-fit: cover;
+	scroll-snap-align: center;
+}
+footer {
+	background-color: black;
+	color: white;
+	min-height: 10%;
+	width: 100%;
+	text-decoration: none;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+.redes {
+	display: block;
+	text-decoration: none;
+}
+.redes a {
+	margin: 5px 0px;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: rgb(220, 222, 222);
+	font-family: $fuete;
+}
+.formulario {
+	font-family: 'Quicksand', sans-serif;
+}
+.profes {
+	height: 300px;
+	width: 400px;
+	display: inline-block;
+}
+.profe {
+	margin: auto;
+	width: 200px;
+}
+.profes span {
+	display: inline-block;
+	vertical-align: top;
+	font-family: $fuete;
+	font-size: small;
+	width: 150px;
+	text-align: center;
+}
+.profes img {
+	width: 200px;
+	height: 175px;
+}
+.nosotros {
+	width: auto;
+	margin: auto;
+	padding: 5%;
+	font-family: $fuete;
+	font-size: medium;
+	margin-top: 30px;
+}
+.contenedorProfes {
+	width: 100%;
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+}
+.contenedor {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.contenedor form {
+	float: right;
+}
+.conteiner {
+	display: flex;
+	align-items: center;
+}
+ul {
+	list-style: none;
+}
+ul li {
+	padding-bottom: 10px;
+	font-size: small;
+}
+ul li a {
+	text-decoration: none;
+	color: dimgray;
+}
+.contacto {
+	height: 100%;
+}
+.labelForm {
+	width: 500px;
+}
+textarea {
+	font-family: $fuete;
+	font-size: medium;
+}
+fieldset {
+	margin: auto;
+	padding: 20px;
+}
+.filtros {
+	font-family: $fuete;
+	font-size: medium;
+	margin: 10px;
+	padding: 25px;
+}
+h4 {
+	font-family: $fuete;
+	font-size: large;
+	text-align: center;
+}
+.horariosSpam {
+	font-family: $fuete;
+	font-size: small;
+	text-align: center;
+}
+.subtitulo {
+	padding: 10px;
+	border: 2px solid rgb(199, 195, 188);
+}
+.table-grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0 10px 0;
+}
+.table-grid .col {
+	border: 1px solid black;
+}
+table {
+	border: solid 1px black;
+	font-family: $fuete;
+	font-size: large;
+	text-align: center;
+	border-collapse: collapse;
+}
+table th {
+	border: solid 1px black;
+	padding: 25px;
+}
+table td {
+	border: solid 1px black;
+	padding: 10px;
+}
+table tr {
+	border: solid 1px black;
+	padding: 15px;
+}
+.actividades {
+	display: flex;
+}
+.actividades img {
+	margin-top: 55px;
+	width: 250px;
+	height: 200px;
+	margin-left: 25%;
+	display: block;
+	margin: auto;
+}
+.act {
+	padding: 50px;
+	font-family: $fuete;
+}
+.act p {
+	margin-top: 10px;
+	width: 100%;
+}
+.costos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10% 0 10%;
+}
+.planes {
+	height: 150px;
+	border: solid 1px black;
+	font-family: $fuete;
+	text-align: center;
+	justify-content: center;
+}
+.planes p {
+	padding: 10px;
+}
+.img_act {
+	width: 200px;
+	margin: 10px;
+}
+html {
+	height: 100%;
+	position: relative;
+}
+body {
+	margin: 0;
+}
+button {
+	background-color: black;
+	cursor: pointer;
+	border: none;
+	padding: 6px 16px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
